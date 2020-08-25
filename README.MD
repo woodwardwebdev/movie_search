@@ -7,5 +7,6 @@ This simple app uses the Open Movie Database to let you search for information a
 ### Tech Used
 
 - node.js
+- express framework
 - ejs templating
 - google fonts
