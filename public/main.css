@@ -1,0 +1,102 @@
+.container {
+    border-radius: 30px;
+    border: 1px solid #5b7e9b;
+    box-shadow: 4px 1px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-color: steelblue;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.yourMovie {
+    background-color: #F7F7F7;
+    margin-top: 20px;
+}
+
+.mainTile {
+    padding: 30px;
+}
+
+
+.titles {
+    border: 1px solid steelblue;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.plot {
+    border: 1px solid steelblue;
+    padding: 10px;
+    
+}
+
+.header {
+    height: 120px;
+}
+
+.header h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.resultsHead {
+    text-align: center;
+    padding: 20px;
+}
+
+.resultsHead h2 {
+    text-transform: uppercase;
+}
+
+.blurb {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid steelblue;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.myForm {
+    text-align: center;
+}
+
+input[type="text"] {
+    display: block;
+    margin: 10px auto;
+    height: 40px;
+    width: 40%;
+    text-align: center;
+}
+
+select {
+    margin: 10px 20px;
+}
+
+.btn {
+    background-color: steelblue;
+}
+
+#searchBtn {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+   
+    
+}
+
+.yourMovieHome {
+    background-color: #F7F7F7;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    min-width: 500px;
+}
+
+
+
+
+
+

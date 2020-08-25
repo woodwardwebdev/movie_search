@@ -1,0 +1,37 @@
+<%include partials/header%>
+
+
+<div class = "yourMovieHome container">
+<div class = "header row align-items-center justify-content-center">
+    <h1>Welcome to the Movie search page!</h1>
+</div>
+<div class = "blurb">
+    <p>Go ahead, search for a movie.
+    <br>
+    We'll show you the closest 10 results, with pictures!
+    </p>
+</div>
+
+<div class = "myForm">
+    <form id = "mainSearch" action = "/searchmovie" method = "GET">
+    <input type = "text" name = "title" placeholder = "Search for a Movie Title">
+    <button class = "btn btn-primary" id = "searchBtn">Find it!</button>
+</form>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%include partials/footer%>

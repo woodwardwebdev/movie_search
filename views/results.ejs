@@ -1,0 +1,52 @@
+<%include partials/header%>
+
+<div class = "container yourMovie resultsHead">
+    <h2><span id="numMovies"><%=movies.length%></span> movies match that title, here they are!</h2>
+    <p>Not what you're looking for? Go back and search again.</p>
+    <form action = "/" method = "GET">
+    <button class = "btn btn-primary">Home</button>
+    </form>
+    
+</div>
+    
+    <%movies.forEach(function(movie){%>
+    <% let sender = movie["imdbID"];%>
+    <div class = "yourMovie container">
+        <div class = "row justify-content-center align-items-center mainTile">
+        <div class = "col-md-6">
+            <div class = "titles">
+                <h3>Movie Title: 
+                    <br>
+                    <strong><%=movie["Title"]%></strong>
+                </h3>
+                <h3>Year Released: 
+                <br>
+                <strong><%=movie["Year"]%></strong>
+                </h3>
+            </div>
+             <form action = "/singleMovie" method = "GET">
+            <button class = "btn btn-primary" type = "submit" name ="targetMovie" value = "<%=sender%>">More info</button>
+        </form>
+        </div>
+        <div class = "pic col-md-6"> 
+            <div class = "row justify-content-center align-objects-center">
+               <% if (movie["Poster"] == 'N/A') { %>
+                    <p>Sorry, no image found for this movie.</p>
+                   <% } else { %>
+                <img src = <%=movie["Poster"]%>>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</div>
+    <% }) %>
+    
+    
+    
+    
+  
+    
+</div>
+
+
+<%include partials/footer%>
