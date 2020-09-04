@@ -1,5 +1,5 @@
 // package requirements
-require("dotenv").config();
+// require("dotenv").config();
 const express = require("express");
 const app = express();
 const request = require("request");
@@ -29,6 +29,7 @@ app.get("/searchmovie", function(req, res) {
       "http://www.omdbapi.com/?s=" + title + "&apikey=" + API_KEY,
       function(error, response, body) {
         const parsedData = JSON.parse(body);
+        console.log(parsedData);
         for (let i = 0; i < parsedData.Search.length; i++) {
           titles.push(parsedData.Search[i]["Title"]);
         }
@@ -56,7 +57,7 @@ app.get("/singleMovie", function(req, res) {
   );
 });
 
-// sets up the listener in Cloud 9
-app.listen(3001, function() {
-  console.log("Server has started.");
-});
+// sets up the listener for Heroku
+app.listen(process.env.PORT || 3001, () =>
+  console.log("Movie Search server is up")
+);
