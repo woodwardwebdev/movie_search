@@ -57,6 +57,6 @@ app.get("/singleMovie", function(req, res) {
 });
 
 // sets up the listener in Cloud 9
-app.listen(3000, function() {
+app.listen(3001, function() {
   console.log("Server has started.");
 });
